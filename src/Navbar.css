@@ -1,0 +1,36 @@
+/* Navbar.css */
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+    border-radius: 20px; /* Add rounded corners to the navbar */
+  }
+  
+  .navbar-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .navbar-item:nth-child(even) {
+    background-color: #222;
+  }
+  
+  .navbar-item:nth-child(odd) {
+    background-color: #444;
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .navbar-item a:hover {
+    color: yellow;
+  }
+  

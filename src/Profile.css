@@ -1,0 +1,30 @@
+/* Profile.css */
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px; /* Increase the padding to add more space on the left and right */
+  text-align: center; /* Center-align the text */
+}
+
+.profile-image {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 300px; /* Increase the image size as needed */
+  height: 300px;
+  margin-right: 20px;
+}
+
+.profile-info {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-info p {
+  font-size: 16px;
+}
