@@ -1,41 +1,45 @@
 /* Experience.css */
 
 .experience {
-    display: flex;
-    flex-direction: column; /* Change flex direction to column */
-  }
-  
-  .experience-divider {
-    height: 20px; /* Add some space between experiences */
-  }
-  
-  .experience-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-  
-  .experience-details {
-    flex: 3;
-    padding-left: 20px;
-  }
-  
-  .experience-details h3 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .experience-details p {
-    font-size: 16px;
-  }
-  
-  .experience-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .company-logo img {
-    max-width: 100px;
-    height: auto;
-  }
+  display: flex;
+  flex-direction: column;
+  margin: 20px; /* Add some margin for spacing */
+}
+
+.experience-divider {
+  height: 20px;
+}
+
+.experience-content {
+  display: flex;
+  justify-content: flex-start; /* Adjust alignment */
+  align-items: center; /* Adjust alignment */
+  margin-bottom: 20px;
+}
+
+.company-logo img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px; /* Add some margin to separate the logo */
+}
+
+.experience-details {
+  flex: 1; /* Take up remaining space */
+}
+
+.experience-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Add some space between heading and content */
+}
+
+.experience-details p {
+  font-size: 16px;
+  margin-bottom: 5px; /* Add some space between paragraphs */
+}
+
+.experience-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px; /* Add some space above the list */
+}
