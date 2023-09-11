@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/xvepkj/portfolio-website/static/css/main.ef11ba76.css",
+    "main.js": "/xvepkj/portfolio-website/static/js/main.8f20f670.js",
+    "index.html": "/xvepkj/portfolio-website/index.html",
+    "main.ef11ba76.css.map": "/xvepkj/portfolio-website/static/css/main.ef11ba76.css.map",
+    "main.8f20f670.js.map": "/xvepkj/portfolio-website/static/js/main.8f20f670.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef11ba76.css",
+    "static/js/main.8f20f670.js"
+  ]
+}
