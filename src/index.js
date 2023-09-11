@@ -16,6 +16,7 @@ root.render(
       <Route path="/experience" element={<ExperiencePage />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/about" element={<About />} />
+      <Route path="*" element={<Home />} />
       {/* Define routes for your other pages here */}
     </Routes>
   </Router>
