@@ -4,15 +4,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px; /* Increase the padding to add more space on the left and right */
-  text-align: center; /* Center-align the text */
+  padding: 40px;
+  text-align: center;
 }
 
 .profile-image {
   border: 2px solid white;
   border-radius: 50%;
-  width: 300px; /* Increase the image size as needed */
-  height: 300px;
+  width: 300px;
+  height: 350px; /* Increase the height to make the picture taller */
   margin-right: 20px;
 }
 
@@ -27,4 +27,20 @@
 
 .profile-info p {
   font-size: 16px;
+}
+
+.contact-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 30px;
+}
+
+.contact-icons a:hover {
+  color: yellow;
 }
