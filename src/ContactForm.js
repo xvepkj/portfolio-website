@@ -79,6 +79,7 @@ function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             required
+            rows="5" // Adjust the number of rows as needed to make it bigger
           ></textarea>
         </div>
         <button type="submit" className="submit-button">

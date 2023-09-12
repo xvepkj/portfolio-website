@@ -2,12 +2,10 @@
 
 import React from 'react';
 import './Projects.css';
-import Navbar from './Navbar'; // Import your Navbar component
 
 function Projects() {
   return (
     <div>
-        <Navbar /> {/* Include the Navbar component */}
         <div className="projects-container">
         <h1>Projects</h1>
         <div className="project">

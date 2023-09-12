@@ -1,12 +1,10 @@
 import React from 'react';
 import ContactForm from './ContactForm';
-import Navbar from './Navbar';
 import './About.css'; // Import the About component's CSS
 
 function About() {
   return (
     <div>
-      <Navbar />
       <div className="about-container">
         <h1>About Me</h1>
         <p>
