@@ -1,5 +1,3 @@
-// Experience.js
-
 import React from 'react';
 import './Experience.css';
 
@@ -12,9 +10,9 @@ function Experience() {
             <img src="https://flobiz.in/wp-content/uploads/2020/02/Group-8.png" alt="Flobiz Logo" />
           </div>
           <div className="experience-details">
-            <h3>Flobiz (Fintech Startup - 1 million DAU)</h3>
-            <p>Software Engineer</p>
-            <p>May 2022 - December 2022</p>
+            <h3><strong>Flobiz (Fintech Startup - 1 million DAU)</strong></h3>
+            <p className="designation"><strong>Software Engineer</strong></p>
+            <p className="duration"><strong>May 2022 - December 2022</strong></p>
             <ul>
               <li>Owned and iterated on core app functionalities: Merchant Report Generation and App Paywall.</li>
               <li>Enhanced Merchant Report Generation with advanced filtering, downloading, and sharing capabilities.</li>
@@ -37,9 +35,9 @@ function Experience() {
             <img src="https://flobiz.in/wp-content/uploads/2020/02/Group-8.png" alt="Additional Experience Logo" />
           </div>
           <div className="experience-details">
-            <h3>Flobiz (Fintech Startup - 1 million DAU)</h3>
-            <p>Software Engineer Intern</p>
-            <p>September 2021 - April 2022</p>
+            <h3><strong>Flobiz (Fintech Startup - 1 million DAU)</strong></h3>
+            <p className="designation"><strong>Software Engineer Intern</strong></p>
+            <p className="duration"><strong>September 2021 - April 2022</strong></p>
             <ul>
               <li>Developed GST-based data autofill features to streamline user onboarding.</li>
               <li>Developed multiple features such as Payment Voice Notification and Cashback Rewards.</li>
@@ -57,9 +55,9 @@ function Experience() {
             <img src="https://i.postimg.cc/bvz1F5dN/longdesc2.png" alt="GeeksforGeeks Logo" />
           </div>
           <div className="experience-details">
-            <h3>GeeksforGeeks</h3>
-            <p>Technical Intern</p>
-            <p>December 2020 - March 2021</p>
+            <h3><strong>GeeksforGeeks</strong></h3>
+            <p className="designation"><strong>Technical Intern</strong></p>
+            <p className="duration"><strong>December 2020 - March 2021</strong></p>
             <ul>
               <li>Published innovative solutions to complex Data Structures and Algorithms related problems.</li>
               <li>Provided working code in C++ for solution demonstration.</li>

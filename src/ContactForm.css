@@ -50,3 +50,28 @@ textarea {
 .submit-button:hover {
   background-color: #E63946;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .contact-form-container {
+    padding-left: 0px;
+    padding-right: 1px;
+    padding-top: 10px;
+    padding-top: 10px;
+  }
+
+  .contact-form {
+    align-items: center; /* Center-align both horizontally and vertically */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px; /* Reduce font size for smaller screens */
+    text-align: center; /* Center-align text in input fields and textarea */
+  }
+
+  .submit-button {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}

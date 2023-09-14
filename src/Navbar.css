@@ -41,7 +41,7 @@
 }
 
 .pkj {
-  flex: 2; /* Make PKJ item larger */
+  flex: 1; /* Make PKJ item larger */
   text-align: left; /* Align PKJ to the left */
   font-weight: bold; /* Make PKJ text bold */
   color: #E63946; /* Set PKJ text color to #E63946 */
@@ -50,4 +50,87 @@
 
 .pkj a {
   font-size: 40px; /* Adjust the font size for PKJ */
+}
+
+/* Mobile Menu Button */
+.menu-button {
+  display: none; /* Initially hide the button on large screens */
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Position the button on the top right corner */
+  z-index: 2; /* Increase the z-index to ensure it's clickable */
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #1D3557;
+  margin: 3px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bar.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-9px, 3px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(45deg) translate(-9px, -3px);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .menu-button {
+    display: flex; /* Show the button on small screens */
+  }
+
+  .navbar-list {
+    display: none; /* Initially hide the sidebar menu on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #A8DADC;
+    z-index: 1;
+    height: 100vh;
+    width: 40vw;
+    align-items: flex-start; /* Align items to the top */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    right: -100%;
+    transition: right 0.3s ease-in-out;
+    border-radius: 2px;
+  }
+
+  .navbar-list.open {
+    display: flex; /* Show the sidebar menu when menuOpen is true */
+    align-items: flex-start; /* Align items to the top */
+    right: 0;
+  }
+
+  .navbar-item {
+    align-self: flex-start;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    flex : 0;
+    margin-left: 5px;
+  }
+
+  .pkj{
+    padding-left: 10px;
+  }
+
+  .pkj a {
+    font-size: 30px; /* Adjust the font size for PKJ */
+  }
+  
 }

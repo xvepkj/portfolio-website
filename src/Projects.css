@@ -9,6 +9,7 @@
   border: 1px solid #ccc;
   padding: 35px; /* Add more padding */
   border-radius: 5px;
+  border-color: #A8DADC;
 }
 
 .project h2 {
@@ -18,11 +19,12 @@
 
 .project a {
   text-decoration: none;
-  color: #007bff;
+  color: #457B9D;
 }
 
 .project a:hover {
   text-decoration: underline;
+  color: #E63946;
 }
 
 .project ul {

@@ -19,7 +19,7 @@ function Projects() {
 
         <div className="project">
           <h2>Scheduler - Activity Planner and Tracker</h2>
-          <a href="https://play.google.com/store/apps/details?id=com.xve.scheduler" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/xvepkj/scheduler-repo" target="_blank" rel="noopener noreferrer">Repo</a>
+          <a href="https://play.google.com/store/apps/details?id=com.xve.scheduler" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/xvepkj/scheduler-android" target="_blank" rel="noopener noreferrer">Repo</a>
           <ul>
             <li>Designed an app in Kotlin that helps users maintain their schedule, leading to better productivity.</li>
             <li>Implemented event templates with flexible scheduling options based on weekly or monthly criteria.</li>
@@ -31,7 +31,7 @@ function Projects() {
 
         <div className="project">
           <h2>LegalAssist</h2>
-          <a href="https://www.naagar.com/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/xvepkj/legalassist-repo" target="_blank" rel="noopener noreferrer">Repo</a>
+          <a href="https://www.naagar.com/" target="_blank" rel="noopener noreferrer">Live</a>
           <ul>
             <li>Collaborated on the backend development of a Node.js web-based case management app for advocates.</li>
             <br></br>

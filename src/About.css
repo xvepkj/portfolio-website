@@ -2,7 +2,7 @@
 
 .about-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 60px auto 0;
     padding: 40px;
     background-color: #f7f7f7;
     border-radius: 5px;
@@ -23,3 +23,8 @@
   
   /* You can further style the ContactForm component if needed */
   
+  @media screen and (max-width: 768px) {
+    .about-container {
+      margin: 0 auto;
+    }
+  }    

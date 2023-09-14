@@ -10,10 +10,9 @@
   height: 20px;
 }
 
-.experience-content {
+.experience-item {
   display: flex;
-  justify-content: flex-start; /* Adjust alignment */
-  align-items: center; /* Adjust alignment */
+  flex-direction: column; /* Stack content vertically on smaller screens */
   margin-bottom: 20px;
 }
 
@@ -21,11 +20,12 @@
   max-width: 170px;
   height: auto;
   margin-right: 20px; /* Add some margin to separate the logo */
+  margin-bottom: 10px; /* Add margin below the image */
 }
 
 .experience-details {
   flex: 1; /* Take up remaining space */
-  margin-left: 20px;
+  margin-left: 0; /* Remove left margin to stack the logo on top */
 }
 
 .experience-details h3 {
@@ -39,8 +39,51 @@
   margin-bottom: 5px; /* Add some space between paragraphs */
 }
 
+.experience-details .designation {
+  font-size: 19px; /* Adjust the font size for the designation */
+}
+
+.experience-details .duration {
+  font-size: 16px; /* Adjust the font size for the duration */
+}
+
 .experience-details ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 5px; /* Add some space above the list */
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+
+  .experience-item {
+    margin-bottom: 10px; /* Reduce margin for spacing on smaller screens */
+  }
+
+  .company-logo img {
+    max-width: 150px; /* Reduce logo size for smaller screens */
+    padding: 20px;
+    
+  }
+
+  .experience-details {
+    margin-left: 0; /* Remove left margin to stack the logo on top */
+  }
+
+  .experience-details h3 {
+    font-size: 20px; /* Reduce font size for h2 on smaller screens */
+  }
+
+  .experience-details p {
+    font-size: 14px; /* Reduce font size for text on smaller screens */
+    margin-top: 5px; /* Add space between paragraphs on smaller screens */
+  }
+
+  .experience-details .designation {
+    font-size: 16px; /* Adjust font size for designation on smaller screens */
+  }
+
+  .experience-details .duration {
+    font-size: 14px; /* Adjust font size for duration on smaller screens */
+  }
 }

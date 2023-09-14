@@ -64,3 +64,40 @@
 .contact-icons a:hover {
   color: yellow;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .profile-container {
+    align-items: center; /* Center content vertically on smaller screens */
+  }
+
+  .profile {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .profile-image {
+    width: 250px; /* Reduce image size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    position: static; /* Remove absolute positioning */
+    margin: 20px 0; /* Add margin to separate image and text */
+  }
+
+  .profile-info {
+    padding: 0; /* Remove padding */
+    margin-top: 0; /* Remove margin */
+  }
+
+  .profile-info h2 {
+    font-size: 30px; /* Reduce font size for h2 */
+  }
+
+  .profile-info p {
+    font-size: 18px; /* Reduce font size for text */
+  }
+
+  .contact-icons {
+    margin-top: 10px; /* Adjust margin */
+  }
+}

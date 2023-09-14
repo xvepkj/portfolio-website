@@ -1,27 +1,40 @@
 // Navbar.js
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-  // Initialize the active state with a default value
   const [activeItem, setActiveItem] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Function to handle click events and update the active item
   const handleItemClick = (item) => {
     setActiveItem(item);
+    // Close the menu on item click if it's open (only for mobile)
+    if (menuOpen) {
+      setMenuOpen(false);
+    }
   };
 
-  // Function to determine the color of a navbar item based on its active state
   const getItemColor = (item) => {
     return activeItem === item ? '#E63946' : '#1D3557';
   };
 
+  const toggleMenu = () => {
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+  };
+
   return (
     <nav>
-      <ul className="navbar-list">
-        <li className="navbar-item pkj">
+      {/* Mobile Menu Button */}
+      <div className="menu-button" onClick={toggleMenu}>
+        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+      </div>
+
+      {/* Sidebar Menu */}
+      <ul className={`navbar-list ${menuOpen ? 'open' : ''}`}>
+      <li className="navbar-item pkj">
           <Link
             to="/portfolio-website"
             onClick={() => handleItemClick('PKJ')}
