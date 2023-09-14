@@ -32,17 +32,17 @@
   text-align: left; /* Align text from left to right */
   padding-left: 600px; /* Adjust the padding to keep space for the image */
   margin-top: -20px; /* Move the info section upwards */
-  margin-bottom: 150px;
+  margin-bottom: 300px;
 }
 
 .profile-info h2 {
-  font-size: 36px; /* Increase the font size for h2 */
+  font-size: 45px; /* Increase the font size for h2 */
   font-weight: bold;
   text-align: left; /* Align heading text from left to right */
 }
 
 .profile-info p {
-  font-size: 18px; /* Increase the font size for the info text */
+  font-size: 22px; /* Increase the font size for the info text */
   text-align: left; /* Align paragraph text from left to right */
 }
 

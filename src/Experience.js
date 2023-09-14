@@ -37,7 +37,8 @@ function Experience() {
             <img src="https://flobiz.in/wp-content/uploads/2020/02/Group-8.png" alt="Additional Experience Logo" />
           </div>
           <div className="experience-details">
-            <h3>Software Engineering Intern</h3>
+            <h3>Flobiz (Fintech Startup - 1 million DAU)</h3>
+            <p>Software Engineer Intern</p>
             <p>September 2021 - April 2022</p>
             <ul>
               <li>Developed GST-based data autofill features to streamline user onboarding.</li>
@@ -53,7 +54,7 @@ function Experience() {
       <div className="experience-item">
         <div className="experience-content">
           <div className="company-logo">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211005162802/longdesc2.png" alt="GeeksforGeeks Logo" />
+            <img src="https://i.postimg.cc/bvz1F5dN/longdesc2.png" alt="GeeksforGeeks Logo" />
           </div>
           <div className="experience-details">
             <h3>GeeksforGeeks</h3>
