@@ -12,7 +12,7 @@ function Experience() {
           <div className="experience-details">
             <h3><strong>Flobiz (Fintech Startup - 1 million DAU)</strong></h3>
             <p className="designation"><strong>Software Engineer</strong></p>
-            <p className="duration"><strong>May 2022 - December 2022</strong></p>
+            <p className="duration"><strong>May 2022 - April 2023</strong></p>
             <ul>
               <li>Owned and iterated on core app functionalities: Merchant Report Generation and App Paywall.</li>
               <li>Enhanced Merchant Report Generation with advanced filtering, downloading, and sharing capabilities.</li>
