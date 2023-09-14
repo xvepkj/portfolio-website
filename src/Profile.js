@@ -1,36 +1,42 @@
-// Profile.js
-
 import React, { useState } from 'react';
 import './Profile.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa'; // Import font icons
+import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
 
 function Profile() {
-  const [h2Hovered, setH2Hovered] = useState(false); // State to track hover for h2
-  const [githubIconHovered, setGithubIconHovered] = useState(false); // State to track hover for GitHub icon
-  const [linkedinIconHovered, setLinkedinIconHovered] = useState(false); // State to track hover for LinkedIn icon
-  const [emailIconHovered, setEmailIconHovered] = useState(false); // State to track hover for Email icon
-  const [pdfIconHovered, setPdfIconHovered] = useState(false); // State to track hover for PDF icon
+  const [h2Hovered, setH2Hovered] = useState(false);
+  const [githubIconHovered, setGithubIconHovered] = useState(false);
+  const [linkedinIconHovered, setLinkedinIconHovered] = useState(false);
+  const [emailIconHovered, setEmailIconHovered] = useState(false);
+  const [pdfIconHovered, setPdfIconHovered] = useState(false);
+  const [imageHovered, setImageHovered] = useState(false);
 
-  // Function to handle hover over h2
   const handleH2Hover = () => {
     setH2Hovered(true);
   };
 
-  // Function to handle mouse leave from h2
   const handleH2Leave = () => {
     setH2Hovered(false);
   };
 
-  // Define the color based on the hover state for h2
   const h2Color = h2Hovered ? '#E63946' : '#333';
+
+  const handleImageHover = () => {
+    setImageHovered(true);
+  };
+
+  const handleImageLeave = () => {
+    setImageHovered(false);
+  };
 
   return (
     <div className="profile-container">
       <div className="profile">
         <img
-          src={process.env.PUBLIC_URL + '/images/linkdinpic.png'} 
+          src={imageHovered ? process.env.PUBLIC_URL + '/images/outlined_linkdinpic.png'  : process.env.PUBLIC_URL + '/images/linkdinpic.png'}
           alt="Pratham Kumar Jha"
           className="profile-image"
+          onMouseEnter={handleImageHover}
+          onMouseLeave={handleImageLeave}
         />
         <div className="profile-info">
           <h2
@@ -40,9 +46,12 @@ function Profile() {
           >
             Pratham Kumar Jha
           </h2>
-          <p>I'm a software engineer who enjoys exploring and adopting new technologies to enhance my skills and contribute to tech advancements. </p>
+          <p>
+            I'm a software engineer who enjoys exploring and adopting new
+            technologies to enhance my skills and contribute to tech
+            advancements.
+          </p>
 
-          {/* Logos and contact information */}
           <div className="contact-icons">
             <a
               href="https://github.com/xvepkj"
@@ -51,7 +60,10 @@ function Profile() {
               onMouseEnter={() => setGithubIconHovered(true)}
               onMouseLeave={() => setGithubIconHovered(false)}
             >
-              <FaGithub size={30} color={githubIconHovered ? '#E63946' : '#333'} />
+              <FaGithub
+                size={30}
+                color={githubIconHovered ? '#E63946' : '#333'}
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/pratham-kumar-jha"
@@ -60,15 +72,21 @@ function Profile() {
               onMouseEnter={() => setLinkedinIconHovered(true)}
               onMouseLeave={() => setLinkedinIconHovered(false)}
             >
-              <FaLinkedin size={30} color={linkedinIconHovered ? '#E63946' : '#333'} />
+              <FaLinkedin
+                size={30}
+                color={linkedinIconHovered ? '#E63946' : '#333'}
+              />
             </a>
             <a
               href="mailto:prathamkumarjha@gmail.com"
               onMouseEnter={() => setEmailIconHovered(true)}
               onMouseLeave={() => setEmailIconHovered(false)}
             >
-              <FaEnvelope size={30} color={emailIconHovered ? '#E63946' : '#333'} />
-            </a>  
+              <FaEnvelope
+                size={30}
+                color={emailIconHovered ? '#E63946' : '#333'}
+              />
+            </a>
             <a
               href="https://1drv.ms/b/s!Aq8ntTdOhKJxgdU2tMJAbeRN_axmwg?e=sNhUe1"
               target="_blank"
@@ -77,7 +95,7 @@ function Profile() {
               onMouseLeave={() => setPdfIconHovered(false)}
             >
               <FaFilePdf size={30} color={pdfIconHovered ? '#E63946' : '#333'} />
-            </a>  
+            </a>
           </div>
         </div>
       </div>
