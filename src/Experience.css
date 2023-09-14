@@ -10,11 +10,18 @@
   height: 20px;
 }
 
+.experience-content {
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+
 .experience-item {
   display: flex;
   flex-direction: column; /* Stack content vertically on smaller screens */
   margin-bottom: 20px;
 }
+
 
 .company-logo img {
   max-width: 170px;
@@ -25,7 +32,7 @@
 
 .experience-details {
   flex: 1; /* Take up remaining space */
-  margin-left: 0; /* Remove left margin to stack the logo on top */
+  margin-left: 20px; /* Remove left margin to stack the logo on top */
 }
 
 .experience-details h3 {
@@ -60,10 +67,21 @@
     margin-bottom: 10px; /* Reduce margin for spacing on smaller screens */
   }
 
+  .experience-content {
+    /* Remove these styles for smaller screens */
+    justify-content: normal;
+    display: block;
+    align-items: normal;
+  }
+
+  .company-logo {
+    text-align: center; /* Center-align the logo */
+  }
+
   .company-logo img {
     max-width: 150px; /* Reduce logo size for smaller screens */
-    padding: 20px;
-    
+    padding: 30px;
+    margin: 0 auto;
   }
 
   .experience-details {
